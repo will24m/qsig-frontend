@@ -1,0 +1,44 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  .nav > #nav-check {
+    @apply hidden;
+  }
+
+  @media (max-width: 1024px) {
+    .nav > .nav-btn {
+      @apply inline-block absolute right-0 top-0;
+    }
+    .nav > .nav-btn > label {
+      @apply inline-block w-[50px] h-[50px] mt-[15px] p-[13px];
+    }
+    .nav > .nav-btn > label:hover,
+    .nav #nav-check:checked ~ .nav-btn > label {
+      @apply bg-[#f4f7f3];
+    }
+    .nav > .nav-btn > label > span {
+      @apply block w-[25px] h-2.5 border-t-2 border-t-[#9cca8c] border-solid;
+    }
+    .nav > .nav-links {
+      @apply absolute block w-full bg-[#f4f7f3] opacity-90 h-0 transition-all duration-[0.3s] ease-[ease-in] overflow-y-hidden left-0 top-20;
+    }
+    .nav > .nav-links > a {
+      @apply block w-full;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      @apply h-0;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      @apply h-[calc(100vh_-_50px)] overflow-y-auto;
+    }
+  }
+  
+}

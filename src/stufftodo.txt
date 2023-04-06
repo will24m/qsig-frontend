@@ -1,0 +1,30 @@
+# 1. apply button should show application form options (watch out for media query)
+
+# 2. Teams page should be styled a bit more
+
+# 3. font it up
+
+# 4. arrows to far apart
+
+# 5. page should be on top upon load
+
+# 6. shorten up code
+
+# 7. don't display if none matches?
+
+->8. center team stuff ///
+
+# 9. linked in links, work if linked in provide
+
+# 10. footer links
+
+# 11. disable unused links
+
+# 12. Pagination (opt)
+
+
+
+
+
+
+

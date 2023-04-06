@@ -1,0 +1,2 @@
+components are little parts of a page
+Header, Footer, Buttons, NavBar, Sections, etc
