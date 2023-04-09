@@ -30,9 +30,12 @@ const Pitches = () => {
     }, [])
   
     const getPitchImages = async() => {
+      console.log("nevada")
       let responseImg = await fetch('https://web-production-e20e7.up.railway.app/api/pitch/img/');
       let dataImg = await responseImg.json();
       let dataImgResults = dataImg.results;
+      console.log("demons")
+      console.log(dataImgResults);
       const dataImgResultsDisplayIsTrue = dataImgResults.filter((elem) => !elem.display);
       setPitchImage(dataImgResultsDisplayIsTrue);
     }
@@ -42,6 +45,8 @@ const Pitches = () => {
       let response = await fetch('https://web-production-e20e7.up.railway.app/api/pitch/');
       let pitch = await response.json();
       let pitchResults = pitch.results;
+      console.log("hide")
+      console.log(pitchResults)
       const pitchResultsDisplayIsTrue = pitchResults.filter((elem) => !elem.display);
       setPitches(pitchResultsDisplayIsTrue);
     }
