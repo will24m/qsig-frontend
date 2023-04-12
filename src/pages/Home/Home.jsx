@@ -126,7 +126,7 @@ const Home = () => {
                 <a className='hover:text-comp transition-all' href="https://www.linkedin.com/company/queen-s-student-investors-group/?originalSubdomain=ca" target="_blank"><BsLinkedin /></a>
               </div>
             </div>
-            <form action="https://formsubmit.co/aidankim100@gmail.com" method="POST" className='flex flex-col font-poppins text-[20px] max-sm:text-[16px] text-p_color w-[70%] leading-[85%] translate-y-[-40px] max-[888px]:translate-y-[40px] max-[888px]:mx-auto max-md:w-full'>
+            <form action="https://formsubmit.co/qsig@clubs.queensu.ca" method="POST" className='flex flex-col font-poppins text-[20px] max-sm:text-[16px] text-p_color w-[70%] leading-[85%] translate-y-[-40px] max-[888px]:translate-y-[40px] max-[888px]:mx-auto max-md:w-full'>
               <div className='flex gap-[34px] w-full max-xsm:flex-col'>
                 <input className='w-full rounded-[100px] border-comp border-[1px] h-[67px] px-[28px]' type="text" name="fname" placeholder="FIRST NAME" />
                 <input className='w-full rounded-[100px] border-comp border-[1px] h-[67px] px-[28px]' name="lname" placeholder="LAST NAME" />
