@@ -42,7 +42,7 @@ const TeamAlter = () => {
         event.preventDefault();
         const targetId = event.target.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        const offset = 80;
+        const offset = 0;
         const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({
             top: targetPosition - offset,
