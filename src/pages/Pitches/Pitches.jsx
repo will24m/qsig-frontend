@@ -36,7 +36,11 @@ const Pitches = () => {
       let dataImgResults = dataImg.results;
       console.log("demons")
       console.log(dataImgResults);
-      const dataImgResultsDisplayIsTrue = dataImgResults.filter((elem) => !elem.display);
+      const dataImgResults2 = dataImgResults.sort((a, b) => a.order - b.order);
+      console.log("imagine")
+      console.log(dataImgResults2)
+      const dataImgResultsDisplayIsTrue = dataImgResults2.filter((elem) => !elem.display);
+      console.log(dataImgResultsDisplayIsTrue);
       setPitchImage(dataImgResultsDisplayIsTrue);
     }
   
