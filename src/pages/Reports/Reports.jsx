@@ -30,7 +30,7 @@ const Reports = () => {
   }, [])
 
   const getReportImages = async() => {
-    let responseImg = await fetch('https://web-production-e20e7.up.railway.app/api/report/img/');
+    let responseImg = await fetch('https://web-production-9cae5.up.railway.app/api/report/img/');
     let dataImg = await responseImg.json();
     let dataImgResults = dataImg.results;
     const dataImgResultsDisplayIsTrue = dataImgResults.filter((elem) => !elem.display);
@@ -39,7 +39,7 @@ const Reports = () => {
 
 
   const getReports = async() => {
-    let response = await fetch('https://web-production-e20e7.up.railway.app/api/report/');
+    let response = await fetch('https://web-production-9cae5.up.railway.app/api/report/');
     let report = await response.json();
     let reportResults = report.results;
     const reportResultsDisplayIsTrue = reportResults.filter((elem) => !elem.display);

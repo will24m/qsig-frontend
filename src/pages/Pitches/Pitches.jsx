@@ -31,22 +31,19 @@ const Pitches = () => {
   
     const getPitchImages = async() => {
       console.log("nevada")
-      let responseImg = await fetch('https://web-production-e20e7.up.railway.app/api/pitch/img/');
+      let responseImg = await fetch('https://web-production-9cae5.up.railway.app/api/pitch/img/');
       let dataImg = await responseImg.json();
       let dataImgResults = dataImg.results;
-      console.log("demons")
       console.log(dataImgResults);
-      const dataImgResults2 = dataImgResults.sort((a, b) => a.order - b.order);
-      console.log("imagine")
-      console.log(dataImgResults2)
-      const dataImgResultsDisplayIsTrue = dataImgResults2.filter((elem) => !elem.display);
+      let dataImgResults2 = dataImgResults.sort((a, b) => a.order - b.order);
+      const dataImgResultsDisplayIsTrue = dataImgResults2.filter((elem) => !elem.do_not_display);
       console.log(dataImgResultsDisplayIsTrue);
       setPitchImage(dataImgResultsDisplayIsTrue);
     }
   
   
     const getPitches = async() => {
-      let response = await fetch('https://web-production-e20e7.up.railway.app/api/pitch/');
+      let response = await fetch('https://web-production-9cae5.up.railway.app/api/pitch/');
       let pitch = await response.json();
       let pitchResults = pitch.results;
       console.log("hide")
