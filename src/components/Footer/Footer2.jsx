@@ -9,7 +9,7 @@ const Footer2 = () => {
         <div className='h-[150px] max-sm:h-[175px] max-xsm:h-[225px] font-lato flex max-sm:flex-col max-sm:justify-center max-sm:gap-2 justify-between items-center max-w-[1194px] mx-auto text-[20px] text-center max-lg:text-[16px] text-logo_color leading-[98.4%] px-[5%]'>
             <div className='flex items-center max-xsm:flex-col max-sm:gap-2'>
                 <img className='h-[60px] mr-[27px] max-sm:h-[45px]' src={qsig_logo} alt="" />
-                <p className='mr-3'>© all rights reserved.</p>
+                <p className='mr-3'>© QSIG 2023.</p>
             </div>
             <div className='flex items-center max-xsm:flex-col max-sm:gap-5'>
                 <p>terms & conditions  |  privacy policy </p>
